@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">               <!--importing google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Dreamshare</title>                                                                   <!--title of site on browser tab-->
+</head>
+<style>
+                                          //subpart 1 {
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+        width: auto;
+        margin: auto;
+        position: relative;
+        text-align: center;
+    }
+
+    img{
+        max-width:100%;height:auto;
+    }
+
+    #containerCat {
+        position: relative;
+        text-align: center;
+        margin: auto;
+        width: 75%;
+    }
+
+    .top-left {
+       position: absolute;
+        top: 50px;
+        left: 200px;
+      
+        
+    }
+
+    .top-right {
+        position: absolute;
+        top: 40px;
+        right: 16px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    li {
+        float: right;
+    }
+
+    #homebutton {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+                                                         //subpart 2 {
+    }
+
+    #findPartner {
+        background-color: #f44336;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: red;
+        border-radius: 45px;
+    }
+
+    .bottom-right {
+        position: relative;
+        bottom: 20px;
+        right: -35px;
+    }
+
+    #otherPartner {
+        background-color: white;
+        color: red;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid red;
+        border-radius: 45px;
+    }
+
+    .avatar {
+        vertical-align: middle;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    #CatHeading {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        position: relative;
+    }
+
+    #columnCat {
+        float: left;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        position: relative;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+
+                    //footer {}
+
+     #table1 {
+          
+            width: 100%;
+
+     }
+
+    th {
+        text-align: left;
+        color: darkgray;
+    }
+
+    td {
+        text-align: left;
+        color: grey;
+    }
+</style>
+
+<!------------------------------------------------------------------------Intro11111111-------------------------------------------------------------------------------------->
+<body>
+
+    <div class="container">
+        <img src="assets/HeaderBackground.jpg" alt="Home"/>
+        <div class="top-left"><img src="assets/logo.svg" alt="Home" /></div>
+        <div class="top-right">
+            <ul>
+
+                <li><a href="#Activities">Activities</a></li>
+                <li><a href="#Partners">Partners</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#login">Log in</a></li>
+                <li><a style="border:1px solid white; border-radius: 45px" href="#register">Sign up</a></li>
+            </ul>
+        </div>
+        <div class="centered">
+            <h1 style="color:white;font-size: 5vw;">SHARE YOUR HOLIDAY DREAM</h1>
+            <p style="color:white; font-size:2vw; font-weight:lighter">And find the perfect partner to fulfill it</p>
+            <a id="findPartner" href="#findPartner">Find your holiday partner</a>
+        </div>
+    </div>
+<!------------------------------------------------------------------------Partners----------------------------------------------------------------------------------------------->
+    <div class="container" style="text-align:center">
+        <h4 style="text-align:center;color:darkgray">Meet a partner for your best holiday</h4>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="assets/partner1.jpg" alt="Bradley" class="avatar">
+                    <div class="bottom-right"><img src="assets/music.svg" alt="music" /></div>
+
+                    <h5>Bradley Hunter</h5>
+
+                    <p>Based in Chicago. I love playing tennis and loud music.</p>
+
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="assets/partner2.jpg" alt="Marie" class="avatar">
+                    <div class="bottom-right"><img src="assets/brush.svg" alt="brush" /></div>
+
+                    <h5>Marie Bennett</h5>
+
+                    <p>
+                        Currently living in Colorado. Lover of art, languages and
+                        travelling
+                    </p>
+
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="assets/partner3.jpg" alt="Diana" class="avatar">
+                    <div class="bottom-right"><img src="assets/camera.svg" alt="camera" /></div>
+
+                    <h5>Diana Wells</h5>
+
+                    <p>
+                        Living in Athens, Greece. I love black and white classics, chillout
+                        music and green tea.
+                    </p>
+
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="assets/partner4.jpg" alt="Christopher Pierce" class="avatar">
+                    <div class="bottom-right"><img src="assets/airplane.svg" alt="airplane" /></div>
+
+                    <h5>Christopher Pierce</h5>
+
+                    <p>Star Wars fanatic. I have a persistent enthusiasm to create new things</p>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <h5 style="text-align:center"><a id="otherPartner" href="#otherPartner">See other partners</a></h5>
+    </div>
+<!----------------------------------------------------------------------Categories---------------------------------------------------------------------------------------------->
+    <div id="containerCat" style="overflow:auto;text-align:center;">
+        <h3 style="text-align:center;color:darkgrey">Discover holiday activity ideas</h3>
+
+        <div class="row">
+            <div id="columnCat">
+                <img src="assets/block1Sports.jpg" alt="Sports">
+                <div class="centered"><h3 style="font-family: 'Montserrat', sans-serif;">Sports</h3></div>
+            </div>
+
+            <div id="columnCat">
+                <img src="assets/block2Wellness.jpg" alt="Wellness">
+                <div class="centered"><h3 id="CatHeading">Wellness and Health</h3></div>
+            </div>
+
+
+
+            <div id="columnCat">
+                <img src="assets/block3Expeditions.jpg" alt="Expeditions">
+                <div class="centered"><h3 id="CatHeading">Expeditions</h3></div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div id="columnCat">
+                <img src="assets/block4Games.jpg" alt="Games">
+
+                <div class="centered"><h3 id="CatHeading">Games</h3></div>
+            </div>
+
+
+            <div id="columnCat">
+                <img src="assets/block5Culture.jpg" alt="Culture">
+                <div class="centered"><h3 id="CatHeading">Culture and Education</h3></div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row">
+
+            <div id="columnCat">
+                <img src="assets/block6Beauty.jpg" alt="Beauty">
+                <div class="centered"><h3 id="CatHeading">Beauty and Relaxation</h3></div>
+            </div>
+
+
+
+            <div id="columnCat">
+                <img src="assets/block7Travelling.jpg" alt="Travelling">
+                <div class="centered"><h3 id="CatHeading">Travelling</h3></div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!------------------------------------------------------------Footer------------------------------------------------------------------------------------------------------>
+  <br />
+    <footer>
+        <hr style="color:red" />
+        <div id="containerCat" style="text-align:center;overflow-x:auto">
+
+            <table id="table1" align="center">
+
+                <tr>
+                    <th style="color:red">DREAMSHARE</th>
+                    <th>Company</th>
+                    <th>Activities</th>
+                    <th>Contact Us</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>About</td>
+                    <td>Sports</td>
+                    <td>Tel (000) 000-0000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Contact</td>
+                    <td>Wellness and Health</td>
+                    <td>Email: dreamshare@email.com</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Press</td>
+                    <td>Expeditions</td>
+
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Blog</td>
+                    <td>Games</td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Terms and Privacy</td>
+                    <td>Culture and Education</td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Help</td>
+                    <td style="color:red">View all</td>
+
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+</html>
